@@ -1,7 +1,41 @@
+body {
+  animation: bg 0.00001s infinite alternate; }
+
 h1 {
   text-align: center;
   left: 0;
   right: 0;
   position: absolute;
   top: 40%;
-  font-size: 40pt; }
+  font-size: 40pt;
+  animation: bang 1s infinite;
+  font-family: comic-sans; }
+
+@keyframes bg {
+  from {
+    background-color: black; }
+  25% {
+    background-color: yellow; }
+  50% {
+    background-color: blue; }
+  75% {
+    background-color: red; }
+  to {
+    background-color: white; } }
+@keyframes bang {
+  from {
+    color: red; }
+  25% {
+    transform: rotate(270deg);
+    color: green; }
+  50% {
+    color: yellow;
+    font-size: 100pt;
+    transform: rotate(360deg); }
+  75% {
+    transform: rotate(720deg);
+    color: white;
+    font-size: 150pt; }
+  to {
+    color: blue;
+    transform: rotate(90deg); } }
